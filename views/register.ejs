@@ -3,7 +3,7 @@
   <% if(ln==="en") { %>
   <h1>Register</h1>
   <% } else { %>
-    <h1 lang="hi">रजिस्टर करें</h1>
+  
   <% } %>
 
   <%- include('partials/errors') %>
@@ -29,22 +29,7 @@
             <br>
           </form>
           <% } else { %>
-          <form action="/register" method="POST">
-            <div class="form-group">
-              <label for="email" lang="hi">ई-मेल</label>
-              <input type="email" class="form-control" name="username">
-            </div>
-            <div class="form-group">
-              <label for="password" lang="hi">पासवर्ड</label>
-              <input type="password" class="form-control" name="password">
-            </div>
-            <div class="form-group">
-              <label for="confirm-password" lang="hi">पासवर्ड की पुष्टि कीजिये</label>
-              <input type="password" class="form-control" name="repassword">
-            </div>
-            <button type="submit" class="btn btn-dark" lang="hi">रजिस्टर करें</button>
-            <br>
-          </form>
+          
           <% } %>
 
 

@@ -179,10 +179,21 @@ footer .link:hover
 
 .about p
 {
+  text-align: center;
   margin-left: 5rem;
   margin-right: 5rem;
 }
-
 .a{
   color :black
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  width: 5%;
+  height: 5%;
+  
 }
