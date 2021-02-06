@@ -1,0 +1,83 @@
+<%- include('partials/dbheader') %>
+
+
+    <form action="./pictures" method='POST'>
+        <div class="container">
+            <h1>Bookings</h1>
+            <p>Fill the details</p>
+            <hr>
+
+            <label for="Organization"><b>Organization</b></label>
+            <input type="text" placeholder="Enter organization" name="organization" id="organization" required>
+            <br>
+
+            <label for="Capacity"><b>Members</b></label>
+            <input type="number" placeholder="Enter capacity" name="capacity" id="capcacity" required>
+            <br>
+
+            <label for="Entry Time"><b>Entry Time</b></label>
+            <input type="date" placeholder="eg: 08:00 PM " name="entry" id="entry" required>
+            <br>
+
+            <label for="Exit Time"><b>Exit Time</b></label>
+            <input type="date" placeholder="eg: 08:30 PM " name="exit" id="exit" required>
+            <br>
+
+
+            <label for="Location"><b>Location</b></label>
+
+            <select id="source" name="source">
+                <option>Deheradun</option>
+                <option>Haridwar</option>
+            </select>
+
+            <!-- Status: -->
+            <select id="status" name="status">
+
+
+                <option>Pacific</option>
+                <option>SilverCity</option>
+                <option>CrossRoad</option>
+            </select>
+
+
+            <hr>
+
+            <p>By booking you agree to our <a href="#">Terms & Privacy</a>.</p>
+            <button type="submit" class="registerbtn">Submit</button>
+        </div>
+
+        <div class="container signin">
+        </div>
+    </form>
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("#source").change(function () {
+                var el = $(this);
+                if (el.val() === "Deheradun") {
+                    $("#status option").remove();
+                    $("#status").append("<option>Pacific</option>");
+                    $("#status").append("<option>Silver City</option>");
+                    $("#status").append("<option>CrossRoad</option>");
+
+                }
+                else if (el.val() === "Haridwar") {
+                    $("#status option").remove();
+                    $("#status").append("<option>Pentagon</option>");
+                    $("#status").append("<option>High City</option>");
+
+                }
+            });
+
+        });
+    </script>
+
+
+
+
+    <%- include('partials/footer') %>

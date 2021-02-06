@@ -1,0 +1,21 @@
+<%- include('partials/dbheader') %>
+
+<body class="profile">
+    <h1 class="heading">Hey <%= userObj.username %>  view your bookings here! </h1>
+    <div class="row">
+        <div class="col-lg-4">
+            <a class="btn btn-light btn-lg" class="links" href="/change">Change password</a>
+        </div>
+        <div class="col-lg-4">
+            <a class="btn btn-light btn-lg" class="links" href="/activity">Booking Acitvity</a>
+        </div>
+        <div class="col-lg-4">
+            <a class="btn btn-light btn-lg" class="links" href="/pictures">Book Place</a>
+        </div>
+        
+    </div>
+
+
+
+
+    <%- include('partials/footer') %>

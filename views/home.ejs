@@ -1,0 +1,95 @@
+<%- include('partials/header') %>
+  <div class="jumbotron centered">
+    <div class="container">
+      <i class="fas fa-briefcase fa-6x"></i>
+      <h1 class="display-3">apna daftar</h1>
+
+      <% if(ln==="en" ) { %>
+        <p class="lead">Book office space!</p>
+
+        <a class="btn btn-light btn-lg" href="/register" role="button">Register</a>
+        <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a>
+        <br>
+        <br>
+        <hr>
+        <a href="/rent" role="button" style="color: black;">Looking to rent office space in your Superstore ?</a>
+        <% } else { %>
+
+          <% } %>
+    </div>
+  </div>
+
+
+  <main>
+
+
+
+    <div class="container marketing" style="margin-top: 100px;">
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Workplace of the future <span class="text-muted">It’ll blow your
+              mind !</span></h2>
+          <p class="lead">With the work from home being the new normal you have no need to migrate! BUT Can you really
+            work from home? What if in your home city you get all the facilities of Banglore/Delhi?
+          </p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <image href="mall.jpg" x="0" y="0" height="500px" width="500px" />
+          </svg>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Modern Offices? Tech Savy Peers? High Speed Internet? Food-court? Gym?
+            We got all in place in your own town.
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <image href="office.jpg" x="0" y="0" height="500px" width="500px" />
+          </svg>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, networking! <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Co-working is the future. Work with employees of different organizations and network! </p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <image href="network.jpg" x="0" y="0" height="500px" width="500px" />
+          </svg>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+
+
+    </div>
+
+  </main>
+
+  </body>
+
+  </html>
+  <%- include('partials/footer') %>

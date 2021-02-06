@@ -1,0 +1,26 @@
+<% if (typeof errors !== 'undefined') {  %>
+<%  errors.forEach(function(error){  %>
+<%  if(ln==="en") {   %>
+<div class="alert alert-warning col-lg-6" role="alert">
+     <%= error.substring(1) %>
+</div>
+<%  }else{ %>
+
+<% }%>
+<% })}  %>
+
+
+<% if (typeof msgs !== 'undefined') {  %>
+<%  for(var i=0;i<msgs.length;i++){ %>
+
+<%  if(ln==="en") {   %>
+     <div lang="hi" class="alert alert-success col-lg-6" role="alert">
+          <%= msgs[i].substring(1) %>
+     </div>
+
+<% } else{  %>
+
+
+<% } %>
+<% } %>
+<% }  %>
