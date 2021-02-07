@@ -1,4 +1,4 @@
-Running the web-app locally
+#Running the web-app locally
 
 1)In your terminal change directory to the project folder
 
